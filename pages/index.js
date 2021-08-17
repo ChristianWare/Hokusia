@@ -1,5 +1,7 @@
 import { getJsonData } from "../utils/tools"
 import CarrouselComp from "../components/ui/carrousel"
+import Articles from "../components/home/articles"
+
 
 const Home = ({data}) => {
 
@@ -8,6 +10,7 @@ console.log({data})
   return (
     <>
       <CarrouselComp data={data.carrousel}/>
+      <Articles data={data.articles}/>
     </>
   )
 }
