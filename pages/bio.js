@@ -5,6 +5,9 @@ import Head from "next/head";
 const BioPage = ({ bioData }) => {
   return (
     <div className='row'>
+      <Head>
+        <meta name='description' content='Biography of Hokusai' />
+      </Head>
       <div className='col-lg-8'>
         <article>
           <div classNmae='mb-4'>
@@ -21,12 +24,12 @@ const BioPage = ({ bioData }) => {
       </div>
       <div className='col-lg-4'>
         <div className='card mb-4'>
-            <Image
+          <Image
             src={`/images/bio/bio.jpg`}
             layout='responsive'
             width='712'
             height='1024'
-             />
+          />
         </div>
       </div>
     </div>
